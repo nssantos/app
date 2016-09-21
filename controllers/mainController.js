@@ -2,7 +2,7 @@ angular.module("elcomaApp", []).controller('MainController', ['$scope', 'ElcomaS
 	$scope.name = 'Natanael Santos';
 	console.log($scope.name);
 	ElcomaService.success(function(data){
-		$scope.elcomaData = data;
+		$scope.elcomaData = JSON.parse(data);
 		var i = 0;
 		for (x in $scope.elcomaData){
 			
