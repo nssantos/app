@@ -1,0 +1,1 @@
+.block-collection {display: inline-block;}
