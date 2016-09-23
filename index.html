@@ -23,16 +23,16 @@
                   <img class="circle responsive-img" ng-src="{{ data.user.picture }}">
                   <span class="title">{{ data.user.username }}</span>
                   <p>{{ data.user.location }} <br>
-                     {{ data.date }}
+                     {{ data.date | date: 'fulldate'}}
                   </p>
                </div>
                <div class="collection-content-mid">
                   
                   <div class="center-align valign" >{{ data.content }}</div>
                </div>
-               <div class="collection-content-right">
-				  <p>{{ data.likes }}</p>
-                  <a href="#!" class="secondary-content"><i class="material-icons ">thumb_up</i></a>
+               <div class="collection-content-right">			  
+                  <a href="#!" class="secondary-content amber-text text-darken-4"><i class="material-icons ">thumb_up</i></a>
+				  <p class="number-likes">{{ data.likes }}</p>
                </div>
             </li>
          </ul>
@@ -42,8 +42,8 @@
          <div class="container">
             <div class="row">
                <div class="col l6 s12">
-                  <h5 class="white-text">Footer Content</h5>
-                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                  <h5 class="white-text">Timeline</h5>
+                  <p class="grey-text text-lighten-4">Single page app desenvolvido para o processo seletivo do projeto Vagalume Wifi.</p>
                </div>
                <div class="col l4 offset-l2 s12">
                   <h5 class="white-text">Conectar</h5>

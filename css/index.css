@@ -7,3 +7,15 @@
 	display: inline-block !important;
 	float: right;
 }
+
+.collection-content-mid {
+	display: inline-block !important;
+	float: center;
+	
+}
+
+.number-likes{
+	position: absolute;
+	top: 40px;
+	right: 16px;
+}
