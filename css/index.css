@@ -1,0 +1,9 @@
+.collection-content-left {
+	display: inline-block !important;
+	float: left;
+}
+
+.collection-content-right {
+	display: inline-block !important;
+	float: right;
+}
