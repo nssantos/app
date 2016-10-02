@@ -3,6 +3,6 @@ angular.module("elcomaApp").factory('ElcomaService', ['$http', function($http) {
     .success(function(data) {
       return data;
     }).error(function(err){
-      return data;
+      return err;
     });
 }]);
